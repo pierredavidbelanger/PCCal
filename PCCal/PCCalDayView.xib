@@ -21,15 +21,15 @@
             <rect key="frame" x="0.0" y="0.0" width="274" height="245"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W57-em-uY7" customClass="PCCircleView">
-                    <rect key="frame" x="69" y="62" width="138" height="122"/>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W57-em-uY7" customClass="PCCircleView">
+                    <rect key="frame" x="76" y="61.5" width="122" height="122"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="W57-em-uY7" secondAttribute="height" multiplier="191:169" id="Syr-mw-jlc"/>
+                        <constraint firstAttribute="width" secondItem="W57-em-uY7" secondAttribute="height" multiplier="1:1" id="Syr-mw-jlc"/>
                     </constraints>
                 </view>
                 <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46g-Yd-jZO" customClass="PCCircleView">
-                    <rect key="frame" x="132" y="134" width="10" height="10"/>
+                    <rect key="frame" x="132" y="187" width="10" height="10"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="10" id="81K-OH-ljp"/>
@@ -37,19 +37,19 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIT-Vz-KQg">
-                    <rect key="frame" x="0.0" y="0.0" width="274" height="30"/>
+                    <rect key="frame" x="0.0" y="0.0" width="274" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="KJV-ud-0Ay"/>
+                        <constraint firstAttribute="height" constant="20" id="KJV-ud-0Ay"/>
                     </constraints>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjS-Sc-RpB">
                     <rect key="frame" x="0.0" y="0.0" width="274" height="245"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                     <state key="normal" title="Button">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="onTouch:" destination="-1" eventType="touchUpInside" id="rIc-Xw-URf"/>
@@ -61,12 +61,12 @@
                 <constraint firstAttribute="trailing" secondItem="CIT-Vz-KQg" secondAttribute="trailing" id="2je-es-pkd"/>
                 <constraint firstItem="W57-em-uY7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3qc-UP-RTu"/>
                 <constraint firstItem="46g-Yd-jZO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6t6-9J-F6d"/>
-                <constraint firstItem="46g-Yd-jZO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="16" id="BcS-IW-fRK"/>
+                <constraint firstItem="PjS-Sc-RpB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MUC-es-SW8"/>
+                <constraint firstItem="46g-Yd-jZO" firstAttribute="top" secondItem="W57-em-uY7" secondAttribute="bottom" constant="3.5" id="MeP-TY-MAL"/>
                 <constraint firstItem="CIT-Vz-KQg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="X35-6j-lCM"/>
                 <constraint firstItem="PjS-Sc-RpB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a2M-pe-A1A"/>
-                <constraint firstItem="PjS-Sc-RpB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cqj-dv-Vkc"/>
+                <constraint firstItem="W57-em-uY7" firstAttribute="centerY" secondItem="PjS-Sc-RpB" secondAttribute="centerY" id="bP3-cE-gGZ"/>
                 <constraint firstItem="W57-em-uY7" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" id="gic-W7-Ajc"/>
-                <constraint firstItem="W57-em-uY7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oim-GS-hnk"/>
                 <constraint firstAttribute="trailing" secondItem="PjS-Sc-RpB" secondAttribute="trailing" id="qu6-z6-p7g"/>
                 <constraint firstAttribute="bottom" secondItem="PjS-Sc-RpB" secondAttribute="bottom" id="tKH-WQ-Dp1"/>
                 <constraint firstItem="CIT-Vz-KQg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vUJ-GN-Y5d"/>
