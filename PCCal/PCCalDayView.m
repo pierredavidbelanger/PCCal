@@ -39,7 +39,7 @@
 
 - (void)reloadData {
     
-    BOOL large = self.bounds.size.width >= 50;
+    BOOL large = self.bounds.size.width >= 75;
     
     [self animateWithDuration:0.15 out:^{
         if (!self.selected) {

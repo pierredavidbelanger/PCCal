@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "PCCal"
-  s.version = "1.0.2"
+  s.version = "1.0.3"
   s.summary = "A simple week view calendar widget."
   s.homepage = "https://github.com/pierredavidbelanger/PCCal"
   s.license = 'MIT'
